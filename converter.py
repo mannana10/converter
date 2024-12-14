@@ -3,6 +3,8 @@ def converter(ops, amount):
         return amount*1000
     elif ops == "m":
         return amount / 1000
+    elif ops == "km":
+        return amount / 0.62137
     else:
         return "Error!"
     
