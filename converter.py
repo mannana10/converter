@@ -3,11 +3,17 @@ def converter(ops, amount):
         return amount*1000
     elif ops == "m":
         return amount / 1000
+
     elif ops == "km":
         return amount / 0.62137
+
+    elif ops == "mile":
+        return amount * 1.62137
     else:
         return "Error!"
-    
+
+print("Hello!")   
 ops = input ("km or m?")
 amount = int(input(f"Amount of {ops}:"))
 print(converter(ops, amount))
+print ("Bye!")
